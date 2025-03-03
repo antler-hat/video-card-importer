@@ -1,0 +1,316 @@
+// !$*UTF8*$!
+{
+    archiveVersion = 1;
+    classes = {
+    };
+    objectVersion = 56;
+    objects = {
+        /* Begin PBXBuildFile section */
+        1A1A1A1A1A1A1A1A1A1A1A1A /* CanonVideoImporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2B2B2B2B2B2B2B2B2B2B2B /* CanonVideoImporter.swift */; };
+        3C3C3C3C3C3C3C3C3C3C3C3C /* DriveManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4D4D4D4D4D4D4D4D4D4D4D /* DriveManager.swift */; };
+        5E5E5E5E5E5E5E5E5E5E5E5E /* DriveListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F6F6F6F6F6F6F6F6F6F6F6F /* DriveListView.swift */; };
+        7G7G7G7G7G7G7G7G7G7G7G7G /* VideoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8H8H8H8H8H8H8H8H8H8H8H8H /* VideoListView.swift */; };
+        9I9I9I9I9I9I9I9I9I9I9I9I /* FileOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0J0J0J0J0J0J0J0J0J0J0J0J /* FileOperations.swift */; };
+        /* End PBXBuildFile section */
+
+        /* Begin PBXFileReference section */
+        2B2B2B2B2B2B2B2B2B2B2B2B /* CanonVideoImporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanonVideoImporter.swift; sourceTree = "<group>"; };
+        4D4D4D4D4D4D4D4D4D4D4D4D /* DriveManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriveManager.swift; sourceTree = "<group>"; };
+        6F6F6F6F6F6F6F6F6F6F6F6F /* DriveListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriveListView.swift; sourceTree = "<group>"; };
+        8H8H8H8H8H8H8H8H8H8H8H8H /* VideoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoListView.swift; sourceTree = "<group>"; };
+        0J0J0J0J0J0J0J0J0J0J0J0J /* FileOperations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileOperations.swift; sourceTree = "<group>"; };
+        /* End PBXFileReference section */
+
+        /* Begin PBXFrameworksBuildPhase section */
+        1K1K1K1K1K1K1K1K1K1K1K1K /* Frameworks */ = {
+            isa = PBXFrameworksBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        /* End PBXFrameworksBuildPhase section */
+
+        /* Begin PBXGroup section */
+        2L2L2L2L2L2L2L2L2L2L2L2L = {
+            isa = PBXGroup;
+            children = (
+                3M3M3M3M3M3M3M3M3M3M3M3M /* CanonVideoImporter */,
+            );
+            sourceTree = "<group>";
+        };
+        3M3M3M3M3M3M3M3M3M3M3M3M /* CanonVideoImporter */ = {
+            isa = PBXGroup;
+            children = (
+                2B2B2B2B2B2B2B2B2B2B2B2B /* CanonVideoImporter.swift */,
+                4D4D4D4D4D4D4D4D4D4D4D4D /* DriveManager.swift */,
+                6F6F6F6F6F6F6F6F6F6F6F6F /* DriveListView.swift */,
+                8H8H8H8H8H8H8H8H8H8H8H8H /* VideoListView.swift */,
+                0J0J0J0J0J0J0J0J0J0J0J0J /* FileOperations.swift */,
+            );
+            path = CanonVideoImporter;
+            sourceTree = "<group>";
+        };
+        /* End PBXGroup section */
+
+        /* Begin PBXNativeTarget section */
+        4N4N4N4N4N4N4N4N4N4N4N4N /* CanonVideoImporter */ = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = 5O5O5O5O5O5O5O5O5O5O5O5O /* Build configuration list for PBXNativeTarget "CanonVideoImporter" */;
+            buildPhases = (
+                1K1K1K1K1K1K1K1K1K1K1K1K /* Frameworks */,
+                6P6P6P6P6P6P6P6P6P6P6P6P /* Sources */,
+            );
+            buildRules = (
+            );
+            dependencies = (
+            );
+            name = CanonVideoImporter;
+            productName = CanonVideoImporter;
+            productReference = 7Q7Q7Q7Q7Q7Q7Q7Q7Q7Q7Q7Q /* CanonVideoImporter.app */;
+            productType = "com.apple.product-type.application";
+        };
+        /* End PBXNativeTarget section */
+
+        /* Begin PBXProject section */
+        8R8R8R8R8R8R8R8R8R8R8R8R /* Project object */ = {
+            isa = PBXProject;
+            attributes = {
+                BuildIndependentTargetsInParallel = 1;
+                LastSwiftUpdateCheck = 1500;
+                LastUpgradeCheck = 1500;
+                TargetAttributes = {
+                    4N4N4N4N4N4N4N4N4N4N4N4N = {
+                        CreatedOnToolsVersion = 15.0;
+                    };
+                };
+            };
+            buildConfigurationList = 9S9S9S9S9S9S9S9S9S9S9S9S /* Build configuration list for PBXProject "CanonVideoImporter" */;
+            compatibilityVersion = "Xcode 14.0";
+            developmentRegion = en;
+            hasScannedForEncodings = 0;
+            knownRegions = (
+                en,
+                Base,
+            );
+            mainGroup = 2L2L2L2L2L2L2L2L2L2L2L2L;
+            productRefGroup = 0T0T0T0T0T0T0T0T0T0T0T0T /* Products */;
+            projectDirPath = "";
+            projectRoot = "";
+            targets = (
+                4N4N4N4N4N4N4N4N4N4N4N4N /* CanonVideoImporter */,
+            );
+        };
+        /* End PBXProject section */
+
+        /* Begin PBXSourcesBuildPhase section */
+        6P6P6P6P6P6P6P6P6P6P6P6P /* Sources */ = {
+            isa = PBXSourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+                1A1A1A1A1A1A1A1A1A1A1A1A /* CanonVideoImporter.swift in Sources */,
+                3C3C3C3C3C3C3C3C3C3C3C3C /* DriveManager.swift in Sources */,
+                5E5E5E5E5E5E5E5E5E5E5E5E /* DriveListView.swift in Sources */,
+                7G7G7G7G7G7G7G7G7G7G7G7G /* VideoListView.swift in Sources */,
+                9I9I9I9I9I9I9I9I9I9I9I9I /* FileOperations.swift in Sources */,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        /* End PBXSourcesBuildPhase section */
+
+        /* Begin XCBuildConfiguration section */
+        1U1U1U1U1U1U1U1U1U1U1U1U /* Debug */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                ALWAYS_SEARCH_USER_PATHS = NO;
+                ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+                CLANG_ANALYZER_NONNULL = YES;
+                CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+                CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+                CLANG_ENABLE_MODULES = YES;
+                CLANG_ENABLE_OBJC_ARC = YES;
+                CLANG_ENABLE_OBJC_WEAK = YES;
+                CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+                CLANG_WARN_BOOL_CONVERSION = YES;
+                CLANG_WARN_COMMA = YES;
+                CLANG_WARN_CONSTANT_CONVERSION = YES;
+                CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+                CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+                CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+                CLANG_WARN_EMPTY_BODY = YES;
+                CLANG_WARN_ENUM_CONVERSION = YES;
+                CLANG_WARN_INFINITE_RECURSION = YES;
+                CLANG_WARN_INT_CONVERSION = YES;
+                CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+                CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+                CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+                CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+                CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+                CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+                CLANG_WARN_STRICT_PROTOTYPES = YES;
+                CLANG_WARN_SUSPICIOUS_MOVE = YES;
+                CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+                CLANG_WARN_UNREACHABLE_CODE = YES;
+                CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+                COPY_PHASE_STRIP = NO;
+                DEBUG_INFORMATION_FORMAT = dwarf;
+                ENABLE_STRICT_OBJC_MSGSEND = YES;
+                ENABLE_TESTABILITY = YES;
+                ENABLE_USER_SCRIPT_SANDBOXING = YES;
+                GCC_C_LANGUAGE_STANDARD = gnu17;
+                GCC_DYNAMIC_NO_PIC = NO;
+                GCC_NO_COMMON_BLOCKS = YES;
+                GCC_OPTIMIZATION_LEVEL = 0;
+                GCC_PREPROCESSOR_DEFINITIONS = (
+                    "DEBUG=1",
+                    "$(inherited)",
+                );
+                GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+                GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+                GCC_WARN_UNDECLARED_SELECTOR = YES;
+                GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+                GCC_WARN_UNUSED_FUNCTION = YES;
+                GCC_WARN_UNUSED_VARIABLE = YES;
+                LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+                MACOSX_DEPLOYMENT_TARGET = 11.0;
+                MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+                MTL_FAST_MATH = YES;
+                ONLY_ACTIVE_ARCH = YES;
+                SDKROOT = macosx;
+                SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+                SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+            };
+            name = Debug;
+        };
+        2V2V2V2V2V2V2V2V2V2V2V2V /* Release */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                ALWAYS_SEARCH_USER_PATHS = NO;
+                ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+                CLANG_ANALYZER_NONNULL = YES;
+                CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+                CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+                CLANG_ENABLE_MODULES = YES;
+                CLANG_ENABLE_OBJC_ARC = YES;
+                CLANG_ENABLE_OBJC_WEAK = YES;
+                CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+                CLANG_WARN_BOOL_CONVERSION = YES;
+                CLANG_WARN_COMMA = YES;
+                CLANG_WARN_CONSTANT_CONVERSION = YES;
+                CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+                CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+                CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+                CLANG_WARN_EMPTY_BODY = YES;
+                CLANG_WARN_ENUM_CONVERSION = YES;
+                CLANG_WARN_INFINITE_RECURSION = YES;
+                CLANG_WARN_INT_CONVERSION = YES;
+                CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+                CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+                CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+                CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+                CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+                CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+                CLANG_WARN_STRICT_PROTOTYPES = YES;
+                CLANG_WARN_SUSPICIOUS_MOVE = YES;
+                CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+                CLANG_WARN_UNREACHABLE_CODE = YES;
+                CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+                COPY_PHASE_STRIP = NO;
+                DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+                ENABLE_NS_ASSERTIONS = NO;
+                ENABLE_STRICT_OBJC_MSGSEND = YES;
+                ENABLE_USER_SCRIPT_SANDBOXING = YES;
+                GCC_C_LANGUAGE_STANDARD = gnu17;
+                GCC_NO_COMMON_BLOCKS = YES;
+                GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+                GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+                GCC_WARN_UNDECLARED_SELECTOR = YES;
+                GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+                GCC_WARN_UNUSED_FUNCTION = YES;
+                GCC_WARN_UNUSED_VARIABLE = YES;
+                LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+                MACOSX_DEPLOYMENT_TARGET = 11.0;
+                MTL_ENABLE_DEBUG_INFO = NO;
+                MTL_FAST_MATH = YES;
+                SDKROOT = macosx;
+                SWIFT_COMPILATION_MODE = wholemodule;
+            };
+            name = Release;
+        };
+        3W3W3W3W3W3W3W3W3W3W3W3W /* Debug */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+                CODE_SIGN_STYLE = Automatic;
+                COMBINE_HIDPI_IMAGES = YES;
+                CURRENT_PROJECT_VERSION = 1;
+                DEVELOPMENT_ASSET_PATHS = "";
+                ENABLE_PREVIEWS = YES;
+                GENERATE_INFOPLIST_FILE = YES;
+                INFOPLIST_KEY_NSHumanReadableCopyright = "";
+                INFOPLIST_KEY_NSHighResolutionCapable = YES;
+                INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.video";
+                INFOPLIST_KEY_LSMinimumSystemVersion = "11.0";
+                LD_RUNPATH_SEARCH_PATHS = (
+                    "$(inherited)",
+                    "@executable_path/../Frameworks",
+                );
+                MARKETING_VERSION = 1.0;
+                PRODUCT_BUNDLE_IDENTIFIER = com.example.CanonVideoImporter;
+                PRODUCT_NAME = "$(TARGET_NAME)";
+                SWIFT_EMIT_LOC_STRINGS = YES;
+                SWIFT_VERSION = 5.0;
+            };
+            name = Debug;
+        };
+        4X4X4X4X4X4X4X4X4X4X4X4X /* Release */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+                CODE_SIGN_STYLE = Automatic;
+                COMBINE_HIDPI_IMAGES = YES;
+                CURRENT_PROJECT_VERSION = 1;
+                DEVELOPMENT_ASSET_PATHS = "";
+                ENABLE_PREVIEWS = YES;
+                GENERATE_INFOPLIST_FILE = YES;
+                INFOPLIST_KEY_NSHumanReadableCopyright = "";
+                INFOPLIST_KEY_NSHighResolutionCapable = YES;
+                INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.video";
+                INFOPLIST_KEY_LSMinimumSystemVersion = "11.0";
+                LD_RUNPATH_SEARCH_PATHS = (
+                    "$(inherited)",
+                    "@executable_path/../Frameworks",
+                );
+                MARKETING_VERSION = 1.0;
+                PRODUCT_BUNDLE_IDENTIFIER = com.example.CanonVideoImporter;
+                PRODUCT_NAME = "$(TARGET_NAME)";
+                SWIFT_EMIT_LOC_STRINGS = YES;
+                SWIFT_VERSION = 5.0;
+            };
+            name = Release;
+        };
+        /* End XCBuildConfiguration section */
+
+        /* Begin XCConfigurationList section */
+        5O5O5O5O5O5O5O5O5O5O5O5O /* Build configuration list for PBXNativeTarget "CanonVideoImporter" */ = {
+            isa = XCConfigurationList;
+            buildConfigurations = (
+                3W3W3W3W3W3W3W3W3W3W3W3W /* Debug */,
+                4X4X4X4X4X4X4X4X4X4X4X4X /* Release */,
+            );
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Release;
+        };
+        9S9S9S9S9S9S9S9S9S9S9S9S /* Build configuration list for PBXProject "CanonVideoImporter" */ = {
+            isa = XCConfigurationList;
+            buildConfigurations = (
+                1U1U1U1U1U1U1U1U1U1U1U1U /* Debug */,
+                2V2V2V2V2V2V2V2V2V2V2V2V /* Release */,
+            );
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Release;
+        };
+        /* End XCConfigurationList section */
+    };
+    rootObject = 8R8R8R8R8R8R8R8R8R8R8R8R /* Project object */;
+} 
