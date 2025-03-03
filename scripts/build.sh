@@ -5,7 +5,7 @@ mkdir -p build
 
 # Compile Swift files
 swiftc -o build/AVCHDVideoImporter \
-    CanonVideoImporter/*.swift \
+    AVCHDVideoImporter/*.swift \
     -sdk $(xcrun --show-sdk-path) \
     -framework SwiftUI \
     -framework AppKit
