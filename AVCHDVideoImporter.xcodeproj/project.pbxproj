@@ -6,7 +6,7 @@
     objectVersion = 56;
     objects = {
         /* Begin PBXBuildFile section */
-        1A1A1A1A1A1A1A1A1A1A1A1A /* CanonVideoImporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2B2B2B2B2B2B2B2B2B2B2B /* CanonVideoImporter.swift */; };
+        1A1A1A1A1A1A1A1A1A1A1A1A /* AVCHDVideoImporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2B2B2B2B2B2B2B2B2B2B2B /* AVCHDVideoImporter.swift */; };
         3C3C3C3C3C3C3C3C3C3C3C3C /* DriveManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4D4D4D4D4D4D4D4D4D4D4D /* DriveManager.swift */; };
         5E5E5E5E5E5E5E5E5E5E5E5E /* DriveListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F6F6F6F6F6F6F6F6F6F6F6F /* DriveListView.swift */; };
         7G7G7G7G7G7G7G7G7G7G7G7G /* VideoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8H8H8H8H8H8H8H8H8H8H8H8H /* VideoListView.swift */; };
@@ -14,7 +14,7 @@
         /* End PBXBuildFile section */
 
         /* Begin PBXFileReference section */
-        2B2B2B2B2B2B2B2B2B2B2B2B /* CanonVideoImporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanonVideoImporter.swift; sourceTree = "<group>"; };
+        2B2B2B2B2B2B2B2B2B2B2B2B /* AVCHDVideoImporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVCHDVideoImporter.swift; sourceTree = "<group>"; };
         4D4D4D4D4D4D4D4D4D4D4D4D /* DriveManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriveManager.swift; sourceTree = "<group>"; };
         6F6F6F6F6F6F6F6F6F6F6F6F /* DriveListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriveListView.swift; sourceTree = "<group>"; };
         8H8H8H8H8H8H8H8H8H8H8H8H /* VideoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoListView.swift; sourceTree = "<group>"; };
@@ -35,28 +35,28 @@
         2L2L2L2L2L2L2L2L2L2L2L2L = {
             isa = PBXGroup;
             children = (
-                3M3M3M3M3M3M3M3M3M3M3M3M /* CanonVideoImporter */,
+                3M3M3M3M3M3M3M3M3M3M3M3M /* AVCHDVideoImporter */,
             );
             sourceTree = "<group>";
         };
-        3M3M3M3M3M3M3M3M3M3M3M3M /* CanonVideoImporter */ = {
+        3M3M3M3M3M3M3M3M3M3M3M3M /* AVCHDVideoImporter */ = {
             isa = PBXGroup;
             children = (
-                2B2B2B2B2B2B2B2B2B2B2B2B /* CanonVideoImporter.swift */,
+                2B2B2B2B2B2B2B2B2B2B2B2B /* AVCHDVideoImporter.swift */,
                 4D4D4D4D4D4D4D4D4D4D4D4D /* DriveManager.swift */,
                 6F6F6F6F6F6F6F6F6F6F6F6F /* DriveListView.swift */,
                 8H8H8H8H8H8H8H8H8H8H8H8H /* VideoListView.swift */,
                 0J0J0J0J0J0J0J0J0J0J0J0J /* FileOperations.swift */,
             );
-            path = CanonVideoImporter;
+            path = AVCHDVideoImporter;
             sourceTree = "<group>";
         };
         /* End PBXGroup section */
 
         /* Begin PBXNativeTarget section */
-        4N4N4N4N4N4N4N4N4N4N4N4N /* CanonVideoImporter */ = {
+        4N4N4N4N4N4N4N4N4N4N4N4N /* AVCHDVideoImporter */ = {
             isa = PBXNativeTarget;
-            buildConfigurationList = 5O5O5O5O5O5O5O5O5O5O5O5O /* Build configuration list for PBXNativeTarget "CanonVideoImporter" */;
+            buildConfigurationList = 5O5O5O5O5O5O5O5O5O5O5O5O /* Build configuration list for PBXNativeTarget "AVCHDVideoImporter" */;
             buildPhases = (
                 1K1K1K1K1K1K1K1K1K1K1K1K /* Frameworks */,
                 6P6P6P6P6P6P6P6P6P6P6P6P /* Sources */,
@@ -65,9 +65,9 @@
             );
             dependencies = (
             );
-            name = CanonVideoImporter;
-            productName = CanonVideoImporter;
-            productReference = 7Q7Q7Q7Q7Q7Q7Q7Q7Q7Q7Q7Q /* CanonVideoImporter.app */;
+            name = AVCHDVideoImporter;
+            productName = AVCHDVideoImporter;
+            productReference = 7Q7Q7Q7Q7Q7Q7Q7Q7Q7Q7Q7Q /* AVCHDVideoImporter.app */;
             productType = "com.apple.product-type.application";
         };
         /* End PBXNativeTarget section */
@@ -85,7 +85,7 @@
                     };
                 };
             };
-            buildConfigurationList = 9S9S9S9S9S9S9S9S9S9S9S9S /* Build configuration list for PBXProject "CanonVideoImporter" */;
+            buildConfigurationList = 9S9S9S9S9S9S9S9S9S9S9S9S /* Build configuration list for PBXProject "AVCHDVideoImporter" */;
             compatibilityVersion = "Xcode 14.0";
             developmentRegion = en;
             hasScannedForEncodings = 0;
@@ -98,7 +98,7 @@
             projectDirPath = "";
             projectRoot = "";
             targets = (
-                4N4N4N4N4N4N4N4N4N4N4N4N /* CanonVideoImporter */,
+                4N4N4N4N4N4N4N4N4N4N4N4N /* AVCHDVideoImporter */,
             );
         };
         /* End PBXProject section */
@@ -108,7 +108,7 @@
             isa = PBXSourcesBuildPhase;
             buildActionMask = 2147483647;
             files = (
-                1A1A1A1A1A1A1A1A1A1A1A1A /* CanonVideoImporter.swift in Sources */,
+                1A1A1A1A1A1A1A1A1A1A1A1A /* AVCHDVideoImporter.swift in Sources */,
                 3C3C3C3C3C3C3C3C3C3C3C3C /* DriveManager.swift in Sources */,
                 5E5E5E5E5E5E5E5E5E5E5E5E /* DriveListView.swift in Sources */,
                 7G7G7G7G7G7G7G7G7G7G7G7G /* VideoListView.swift in Sources */,
@@ -256,7 +256,7 @@
                     "@executable_path/../Frameworks",
                 );
                 MARKETING_VERSION = 1.0;
-                PRODUCT_BUNDLE_IDENTIFIER = com.example.CanonVideoImporter;
+                PRODUCT_BUNDLE_IDENTIFIER = com.example.AVCHDVideoImporter;
                 PRODUCT_NAME = "$(TARGET_NAME)";
                 SWIFT_EMIT_LOC_STRINGS = YES;
                 SWIFT_VERSION = 5.0;
@@ -282,7 +282,7 @@
                     "@executable_path/../Frameworks",
                 );
                 MARKETING_VERSION = 1.0;
-                PRODUCT_BUNDLE_IDENTIFIER = com.example.CanonVideoImporter;
+                PRODUCT_BUNDLE_IDENTIFIER = com.example.AVCHDVideoImporter;
                 PRODUCT_NAME = "$(TARGET_NAME)";
                 SWIFT_EMIT_LOC_STRINGS = YES;
                 SWIFT_VERSION = 5.0;
@@ -292,7 +292,7 @@
         /* End XCBuildConfiguration section */
 
         /* Begin XCConfigurationList section */
-        5O5O5O5O5O5O5O5O5O5O5O5O /* Build configuration list for PBXNativeTarget "CanonVideoImporter" */ = {
+        5O5O5O5O5O5O5O5O5O5O5O5O /* Build configuration list for PBXNativeTarget "AVCHDVideoImporter" */ = {
             isa = XCConfigurationList;
             buildConfigurations = (
                 3W3W3W3W3W3W3W3W3W3W3W3W /* Debug */,
@@ -301,7 +301,7 @@
             defaultConfigurationIsVisible = 0;
             defaultConfigurationName = Release;
         };
-        9S9S9S9S9S9S9S9S9S9S9S9S /* Build configuration list for PBXProject "CanonVideoImporter" */ = {
+        9S9S9S9S9S9S9S9S9S9S9S9S /* Build configuration list for PBXProject "AVCHDVideoImporter" */ = {
             isa = XCConfigurationList;
             buildConfigurations = (
                 1U1U1U1U1U1U1U1U1U1U1U1U /* Debug */,

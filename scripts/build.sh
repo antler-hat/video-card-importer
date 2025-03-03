@@ -4,31 +4,31 @@
 mkdir -p build
 
 # Compile Swift files
-swiftc -o build/CanonVideoImporter \
+swiftc -o build/AVCHDVideoImporter \
     CanonVideoImporter/*.swift \
     -sdk $(xcrun --show-sdk-path) \
     -framework SwiftUI \
     -framework AppKit
 
 # Create app bundle
-mkdir -p "build/CanonVideoImporter.app/Contents/MacOS"
-mkdir -p "build/CanonVideoImporter.app/Contents/Resources"
+mkdir -p "build/AVCHDVideoImporter.app/Contents/MacOS"
+mkdir -p "build/AVCHDVideoImporter.app/Contents/Resources"
 
 # Copy binary
-cp build/CanonVideoImporter "build/CanonVideoImporter.app/Contents/MacOS/"
+cp build/AVCHDVideoImporter "build/AVCHDVideoImporter.app/Contents/MacOS/"
 
 # Create Info.plist
-cat > "build/CanonVideoImporter.app/Contents/Info.plist" << EOF
+cat > "build/AVCHDVideoImporter.app/Contents/Info.plist" << EOF
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
     <key>CFBundleExecutable</key>
-    <string>CanonVideoImporter</string>
+    <string>AVCHDVideoImporter</string>
     <key>CFBundleIdentifier</key>
-    <string>com.example.CanonVideoImporter</string>
+    <string>com.example.AVCHDVideoImporter</string>
     <key>CFBundleName</key>
-    <string>CanonVideoImporter</string>
+    <string>AVCHDVideoImporter</string>
     <key>CFBundlePackageType</key>
     <string>APPL</string>
     <key>CFBundleShortVersionString</key>
@@ -45,4 +45,4 @@ cat > "build/CanonVideoImporter.app/Contents/Info.plist" << EOF
 </plist>
 EOF
 
-echo "Build complete! App is in build/CanonVideoImporter.app" 
+echo "Build complete! App is in build/AVCHDVideoImporter.app" 

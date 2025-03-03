@@ -2,7 +2,7 @@ import SwiftUI
 import UniformTypeIdentifiers
 
 @main
-struct CanonVideoImporter: App {
+struct AVCHDVideoImporter: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
