@@ -31,6 +31,7 @@ struct VideoListView: View {
     
     @State private var videoFiles: [VideoFile] = []
     @State private var isScanning = true
+    @State private var lastClickedIndex: Int? = nil
     
     var body: some View {
         Group {
@@ -45,16 +46,13 @@ struct VideoListView: View {
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
                 .background(Color(.windowBackgroundColor))
             } else {
-                List(videoFiles) { video in
+                List(videoFiles.indices, id: \.self) { index in
+                    let video = videoFiles[index]
                     VideoRow(
                         video: video,
                         isSelected: selectedVideos.contains(video.url)
                     ) { isSelected in
-                        if isSelected {
-                            selectedVideos.insert(video.url)
-                        } else {
-                            selectedVideos.remove(video.url)
-                        }
+                        handleSelection(index: index, isSelected: isSelected)
                     }
                 }
                 .listStyle(PlainListStyle())
@@ -63,6 +61,36 @@ struct VideoListView: View {
         .onAppear {
             scanForVideos()
         }
+    }
+    
+    private func handleSelection(index: Int, isSelected: Bool) {
+        let video = videoFiles[index]
+        
+        // Check if shift key is being held down
+        if let event = NSApp.currentEvent, event.modifierFlags.contains(.shift), let lastIndex = lastClickedIndex {
+            // Calculate the range of indices to select/deselect
+            let range = lastIndex < index ? lastIndex...index : index...lastIndex
+            
+            // Update selection for all items in the range
+            for i in range {
+                let url = videoFiles[i].url
+                if isSelected {
+                    selectedVideos.insert(url)
+                } else {
+                    selectedVideos.remove(url)
+                }
+            }
+        } else {
+            // Single selection
+            if isSelected {
+                selectedVideos.insert(video.url)
+            } else {
+                selectedVideos.remove(video.url)
+            }
+        }
+        
+        // Update the last clicked index
+        lastClickedIndex = index
     }
     
     private func scanForVideos() {
