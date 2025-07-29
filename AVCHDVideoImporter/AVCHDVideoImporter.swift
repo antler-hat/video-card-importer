@@ -21,7 +21,7 @@ struct ContentView: View {
     @State private var showImportDialog = false
     @State private var importError: String?
     @State private var showSuccessMessage = false
-    
+
     var body: some View {
         Group {
             if driveManager.isScanning {
@@ -89,24 +89,26 @@ struct ContentView: View {
                         }
                         .buttonStyle(.plain)
                         .padding()
-                        
+
                         Spacer()
-                        
+
                         Text("Videos on \(selectedDrive!.name)")
                             .font(.headline)
-                        
+
                         Spacer()
-                        
+
                         Button(action: {
                             // Select all videos
-                            let allUrls = (selectedDrive?.findVideoFiles() ?? []).map { $0 }
-                            selectedVideos = Set(allUrls)
+                            if let drive = selectedDrive {
+                                let allUrls = driveManager.findVideoFiles(in: drive)
+                                selectedVideos = Set(allUrls)
+                            }
                         }) {
                             Text("Select All")
                         }
                         .buttonStyle(.bordered)
                         .padding(.trailing, 4)
-                        
+
                         Button(action: {
                             selectedVideos.removeAll()
                         }) {
@@ -114,7 +116,7 @@ struct ContentView: View {
                         }
                         .buttonStyle(.bordered)
                         .padding(.trailing, 8)
-                        
+
                         Button(action: {
                             showImportDialog = true
                         }) {
@@ -192,14 +194,13 @@ struct ContentView: View {
             Text(importError ?? "")
         }
     }
-    
+
     private func importVideos(to destinationURL: URL) {
         isImporting = true
         importProgress = 0
-        
-        // Convert selected URLs to array for copying
+
         let sourceURLs = Array(selectedVideos)
-        
+
         FileOperations.copyFiles(
             from: sourceURLs,
             to: destinationURL,
@@ -213,13 +214,10 @@ struct ContentView: View {
                     self.isImporting = false
                     switch result {
                     case .success:
-                        // Show success message
                         self.showSuccessMessage = true
-                        // Hide success message after 2 seconds
                         DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
                             self.showSuccessMessage = false
                         }
-                        // Clear selection after successful import
                         self.selectedVideos.removeAll()
                     case .failure(let error):
                         self.importError = error.localizedDescription
@@ -228,4 +226,4 @@ struct ContentView: View {
             }
         )
     }
-} 
+}

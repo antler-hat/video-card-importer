@@ -182,7 +182,7 @@ class DriveManager: ObservableObject {
     func findVideoFiles(in drive: Drive) -> [URL] {
         let fileManager = FileManager.default
         var videoFiles: [URL] = []
-        
+
         // Look for AVCHD/BDMV/STREAM path
         let streamPath = drive.url.appendingPathComponent("AVCHD/BDMV/STREAM")
         if fileManager.fileExists(atPath: streamPath.path) {
@@ -193,7 +193,7 @@ class DriveManager: ObservableObject {
                 print("Error reading STREAM directory: \(error)")
             }
         }
-        
+
         // Also check PRIVATE/AVCHD/BDMV/STREAM path
         let privateStreamPath = drive.url.appendingPathComponent("PRIVATE/AVCHD/BDMV/STREAM")
         if fileManager.fileExists(atPath: privateStreamPath.path) {
@@ -204,7 +204,20 @@ class DriveManager: ObservableObject {
                 print("Error reading PRIVATE STREAM directory: \(error)")
             }
         }
-        
+
+        // Recursively search for .mp4 and .mov files
+        if let enumerator = fileManager.enumerator(at: drive.url, includingPropertiesForKeys: [.isRegularFileKey], options: [.skipsHiddenFiles, .skipsPackageDescendants]) {
+            for case let fileURL as URL in enumerator {
+                let ext = fileURL.pathExtension.lowercased()
+                if ext == "mp4" || ext == "mov" {
+                    // Avoid duplicates (in case .mp4/.mov are in AVCHD folders)
+                    if !videoFiles.contains(fileURL) {
+                        videoFiles.append(fileURL)
+                    }
+                }
+            }
+        }
+
         return videoFiles
     }
-} 
+}
