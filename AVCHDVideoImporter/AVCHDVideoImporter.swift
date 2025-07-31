@@ -2,7 +2,7 @@ import SwiftUI
 import UniformTypeIdentifiers
 
 @main
-struct AVCHDVideoImporter: App {
+struct VideoCardImporter: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
@@ -29,7 +29,7 @@ struct ContentView: View {
                 VStack(spacing: 30) {
                     ProgressView()
                         .scaleEffect(2.0)
-                    Text("Looking for a Canon camera or card...")
+                    Text("Looking for a camcorder card...")
                         .font(.title2)
                         .fontWeight(.medium)
                     Text("This may take a few moments")
@@ -43,10 +43,10 @@ struct ContentView: View {
                     Image(systemName: "externaldrive.badge.exclamationmark")
                         .font(.system(size: 60))
                         .foregroundColor(.gray)
-                    Text("No Canon camera or card found")
+                    Text("No camcorder card found")
                         .font(.title2)
                         .fontWeight(.medium)
-                    Text("Please connect a Canon camera or memory card")
+                    Text("Please connect a camcorder card")
                         .foregroundColor(.secondary)
                     Button(action: {
                         driveManager.startScanning()

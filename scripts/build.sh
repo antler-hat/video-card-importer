@@ -4,31 +4,31 @@
 mkdir -p build
 
 # Compile Swift files
-swiftc -o build/AVCHDVideoImporter \
+swiftc -o build/VideoCardImporter \
     AVCHDVideoImporter/*.swift \
     -sdk $(xcrun --show-sdk-path) \
     -framework SwiftUI \
     -framework AppKit
 
 # Create app bundle
-mkdir -p "build/AVCHDVideoImporter.app/Contents/MacOS"
-mkdir -p "build/AVCHDVideoImporter.app/Contents/Resources"
+mkdir -p "build/VideoCardImporter.app/Contents/MacOS"
+mkdir -p "build/VideoCardImporter.app/Contents/Resources"
 
 # Copy binary
-cp build/AVCHDVideoImporter "build/AVCHDVideoImporter.app/Contents/MacOS/"
+cp build/VideoCardImporter "build/VideoCardImporter.app/Contents/MacOS/"
 
 # Create Info.plist
-cat > "build/AVCHDVideoImporter.app/Contents/Info.plist" << EOF
+cat > "build/VideoCardImporter.app/Contents/Info.plist" << EOF
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
     <key>CFBundleExecutable</key>
-    <string>AVCHDVideoImporter</string>
+    <string>VideoCardImporter</string>
     <key>CFBundleIdentifier</key>
-    <string>com.example.AVCHDVideoImporter</string>
+    <string>com.example.VideoCardImporter</string>
     <key>CFBundleName</key>
-    <string>AVCHDVideoImporter</string>
+    <string>VideoCardImporter</string>
     <key>CFBundlePackageType</key>
     <string>APPL</string>
     <key>CFBundleShortVersionString</key>
@@ -45,4 +45,4 @@ cat > "build/AVCHDVideoImporter.app/Contents/Info.plist" << EOF
 </plist>
 EOF
 
-echo "Build complete! App is in build/AVCHDVideoImporter.app" 
+echo "Build complete! App is in build/VideoCardImporter.app"

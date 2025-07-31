@@ -97,13 +97,13 @@ class DriveManager: ObservableObject {
                     print("Error listing contents: \(error)")
                 }
                 
-                if self?.isValidCanonDrive(at: volumeURL) == true {
-                    print("Found valid Canon drive: \(volumeURL.path)")
+                if self?.isValidCamcorderDrive(at: volumeURL) == true {
+                    print("Found valid camcorder card: \(volumeURL.path)")
                     DispatchQueue.main.async {
                         self?.validDrives.append(Drive(url: volumeURL))
                     }
                 } else {
-                    print("Not a valid Canon drive: \(volumeURL.path)")
+                    print("Not a valid camcorder card: \(volumeURL.path)")
                 }
                 print("=====================\n")
             }
@@ -152,7 +152,7 @@ class DriveManager: ObservableObject {
         }
     }
     
-    private func isValidCanonDrive(at url: URL) -> Bool {
+    private func isValidCamcorderDrive(at url: URL) -> Bool {
         let fileManager = FileManager.default
         
         // Check for AVCHD file in root
@@ -175,7 +175,7 @@ class DriveManager: ObservableObject {
             }
         }
         
-        print("No valid Canon structure found")
+        print("No valid camcorder card structure found")
         return false
     }
     

@@ -2,7 +2,7 @@ import Foundation
 
 class FileOperations {
     static func copyFiles(from sourceURLs: [URL], to destinationURL: URL, progress: @escaping (Double) -> Void, completion: @escaping (Result<Void, Error>) -> Void) {
-        let queue = DispatchQueue(label: "com.canonball.fileoperations", qos: .userInitiated)
+        let queue = DispatchQueue(label: "com.videocardimporter.fileoperations", qos: .userInitiated)
         let group = DispatchGroup()
         var totalBytes: Int64 = 0
         var copiedBytes: Int64 = 0
@@ -65,4 +65,4 @@ class FileOperations {
             completion(.success(()))
         }
     }
-} 
+}
