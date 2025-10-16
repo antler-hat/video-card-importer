@@ -17,6 +17,16 @@ mkdir -p "build/VideoCardImporter.app/Contents/Resources"
 # Copy binary
 cp build/VideoCardImporter "build/VideoCardImporter.app/Contents/MacOS/"
 
+# Copy app icon resources
+ICONSET_DIR="AVCHDVideoImporter/Assets.xcassets/AppIcon.appiconset"
+if [ -d "$ICONSET_DIR" ]; then
+    cp "$ICONSET_DIR"/*.png "build/VideoCardImporter.app/Contents/Resources/" 2>/dev/null || true
+    ICON_FILE=$(ls "$ICONSET_DIR" | grep -E 'icon_512x512(@2x)?\.png' | head -n 1)
+    if [ -n "$ICON_FILE" ]; then
+        sips -s format icns "$ICONSET_DIR/$ICON_FILE" --out "build/VideoCardImporter.app/Contents/Resources/AppIcon.icns" >/dev/null 2>&1
+    fi
+fi
+
 # Create Info.plist
 cat > "build/VideoCardImporter.app/Contents/Info.plist" << EOF
 <?xml version="1.0" encoding="UTF-8"?>
@@ -41,6 +51,8 @@ cat > "build/VideoCardImporter.app/Contents/Info.plist" << EOF
     <string>public.app-category.video</string>
     <key>NSHighResolutionCapable</key>
     <true/>
+    <key>CFBundleIconFile</key>
+    <string>AppIcon</string>
 </dict>
 </plist>
 EOF
