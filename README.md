@@ -1,27 +1,11 @@
 # Video Card Importer
 
-A macOS application for easily importing videos from a camcorder card. This app helps you transfer video files from your camcorder's memory card to your computer with a clean, modern interface.
+Videos on SD cards are often nested in a whole bunch of folders. This is a macOS application for easily importing videos from a camcorder card. 
 
-## Features
-
-- 🔍 Automatic detection of camcorder cards
-- 📹 Lists all available video files with size and creation date
-- ✅ Multiple video selection with Select All/None options
-- 📊 Real-time import progress tracking
-- 🎨 Modern SwiftUI interface
-- 💾 Safe file copying with progress tracking
-
-## Requirements
-
-- macOS 11.0 or later
-- A camera with AVCHD video recording capability
-
-## Installation
 
 ### Download Release
 1. Download the latest release from the [releases page](https://github.com/antler-hat/video-card-importer/releases)
-2. Drag `AVCHDVideoImporter.app` to your Applications folder
-3. Launch the app from your Applications folder
+2. Drag `VideoCardImporter.app` to your Applications folder
 
 ### Build from Source
 1. Clone this repository:
@@ -34,8 +18,6 @@ A macOS application for easily importing videos from a camcorder card. This app 
    ```bash
    ./scripts/build.sh
    ```
-
-3. The built app will be in `build/AVCHDVideoImporter.app`
 
 ## Usage
 
@@ -52,7 +34,6 @@ A macOS application for easily importing videos from a camcorder card. This app 
 7. Choose a destination folder
 8. Wait for the import to complete
 
-## Development
 
 ### Project Structure
 ```
