@@ -37,8 +37,8 @@ Videos on SD cards are often nested in a whole bunch of folders. This is a macOS
 
 ### Project Structure
 ```
-AVCHDVideoImporter/
-├── AVCHDVideoImporter.swift   # Main app and content view
+VideoCardImporter/
+├── VideoCardImporter.swift   # Main app and content view
 ├── DriveManager.swift         # Drive detection and validation
 ├── DriveListView.swift        # Drive selection UI
 ├── VideoListView.swift        # Video selection UI
@@ -58,9 +58,3 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Acknowledgments
-
-- Built with SwiftUI
-- Designed for AVCHD camera users
-- Inspired by the need for a simple, modern video import tool

@@ -5,7 +5,7 @@ mkdir -p build
 
 # Compile Swift files
 swiftc -o build/VideoCardImporter \
-    AVCHDVideoImporter/*.swift \
+    VideoCardImporter/*.swift \
     -sdk $(xcrun --show-sdk-path) \
     -framework SwiftUI \
     -framework AppKit
@@ -18,7 +18,7 @@ mkdir -p "build/VideoCardImporter.app/Contents/Resources"
 cp build/VideoCardImporter "build/VideoCardImporter.app/Contents/MacOS/"
 
 # Copy app icon resources
-ICONSET_DIR="AVCHDVideoImporter/Assets.xcassets/AppIcon.appiconset"
+ICONSET_DIR="VideoCardImporter/Assets.xcassets/AppIcon.appiconset"
 if [ -d "$ICONSET_DIR" ]; then
     cp "$ICONSET_DIR"/*.png "build/VideoCardImporter.app/Contents/Resources/" 2>/dev/null || true
     ICON_FILE=$(ls "$ICONSET_DIR" | grep -E 'icon_512x512(@2x)?\.png' | head -n 1)
