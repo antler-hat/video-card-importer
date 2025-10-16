@@ -57,4 +57,9 @@ cat > "build/VideoCardImporter.app/Contents/Info.plist" << EOF
 </plist>
 EOF
 
+# Create DMG
+DMG_NAME="VideoCardImporter.dmg"
+hdiutil create -volname "VideoCardImporter" -srcfolder "build/VideoCardImporter.app" -ov -format UDZO "build/$DMG_NAME"
+
 echo "Build complete! App is in build/VideoCardImporter.app"
+echo "DMG created at build/$DMG_NAME"
